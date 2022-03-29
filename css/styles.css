@@ -60,9 +60,9 @@ nav{
     padding: 8px 16px;
     border-radius: 99px;
 }
-.nav-items a.active,.nav-items a:hover
-{
-    background: rgba(0.2, 1, 0, 0) url('../images/button.png');
+.nav-items a.active, .nav-items a:hover{
+    transition: 0.5s;
+    background: rgba(0.2, 1, 0, 0) linear-gradient(168deg, rgba(255,233,133,1) 0%, rgba(252,162,79,1) 100%);
     color: black;
 }
 
