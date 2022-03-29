@@ -1,41 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;  
     box-sizing: border-box;
     
 }
+
 .logo{
     height: 80px;
     width: 30%;
     display: flex;
     justify-content: left;
-    align-items: left;
 }
+
 .logo img{
-    padding: 5px 5px;
+    padding: 5px;
     width: 75px;
     border: 4px solid wheat;
     border-radius: 50px;
 }
+
 .logo img:hover{
+    transition: 0.5s;
     width: 80px;
 }
+
 .container{
-    max-width: 1280px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 nav{
-    position:fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    background: rgba(0.2, 1, 0, 0) url('../images/q1.jpg');
+    background: rgb(142,50,199);
+    background: linear-gradient(90deg, rgba(142,50,199,1) 0%, rgba(93,9,121,1) 50%);;
     padding: 5px 32px;
     align-items: center;
     background-size: cover;
@@ -65,54 +65,8 @@ nav{
     background: rgba(0.2, 1, 0, 0) url('../images/button.png');
     color: black;
 }
-.b1{
-    display: block;
-    position: relative;
-    z-index: 1;
-    user-select: none;
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
-}
-.b1 span{
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background-color: aliceblue;
-    border-radius: 6px;
-    z-index: 1;
-    transform-origin: 0 0;
-    transition: 0.3s;
-}
-.b1:hover span:nth-child(2){
-    transform: translateX(10px);
-    background-color: rgb(170, 122, 216);
 
-}
-.b1.active span:nth-child(1){
-    transform: translate(0px,-2px) rotate(45deg);
-
-}
-.b1.active span:nth-child(2)
-{
-    opacity: 0;
-    transform: translateX(15px);
-}
-.b1.active span:nth-child(3)
-{
-    transform: translate(-3px,3px) rotate(-45deg);
-}
-.b1.active:hover span{
-    background-color: rgb(170, 122, 216);
-}
 @media(min-width: 1000px){
-    .b1{
-        display: none;
-    }
     .nav-items{
         display: block;
     }
@@ -122,27 +76,3 @@ nav{
         display: none;
     }
 }
-.login a{
-    color: aliceblue;
-    margin: 0 16px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: 0.3s;
-    padding: 8px 16px;
-    border-radius: 99px;
-}
-.login a.active,.login a:hover
-{
-    background-color:white;
-    color: black;
-}
-.table1{
-    height: auto;
-    display: block;
-    position: relative;
-}
-.bar{
-    display: block;
-    height: 93px;
-}
-
